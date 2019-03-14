@@ -18,4 +18,7 @@ public interface TelecomService {
 	public CustomerInfo getAllPhoneNumbersById(String custId);
 	// activate a phone number
 	public boolean activatePhoneNumber(String custId, String phoneNumToActivate);
+	// changes the customer to a new phone number 
+	public boolean changePhoneNumberById(String custId, String previousPhoneNum,
+			String newPhoneNum);
 }
