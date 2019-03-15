@@ -48,4 +48,23 @@ public class TelecomServiceImpl implements TelecomService {
 		return false;
 	}
 
+	@Override
+	public boolean changePhoneNumberById(String custId, String previousPhoneNum, 
+			String newPhoneNum ) {	
+		List<CustomerInfo> custList = TelecomDao.custList;
+		for (CustomerInfo cust : custList) {
+			if(cust.getCustId().equals(custId)) {
+				for(PhoneInfo phone : cust.getPhoneList()) {
+					if(phone.getPhoneNumber().equals(previousPhoneNum)){
+						phone.setActivated(false);
+					}
+					else if (phone.getPhoneNumber().equals(newPhoneNum)) {
+						phone.setActivated(true);
+					}
+				}
+			}
+			
+		}
+		return false;
+	}
 }
