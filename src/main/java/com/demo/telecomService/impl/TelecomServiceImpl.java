@@ -49,7 +49,7 @@ public class TelecomServiceImpl implements TelecomService {
 	}
 
 	@Override
-	public boolean changePhoneNumberById(String custId, String previousPhoneNum, 
+	public boolean changePhoneNumberById(String custId, String previousPhoneNum,  //new api for the customer service 
 			String newPhoneNum ) {	
 		List<CustomerInfo> custList = TelecomDao.custList;
 		for (CustomerInfo cust : custList) {
