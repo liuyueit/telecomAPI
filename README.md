@@ -1,3 +1,14 @@
-### Java Configuration of environment variables
-- windows
-- linux: https://www.cnblogs.com/samcn/archive/2011/03/16/1986248.html
+### Telecom provider API demo
+#### API 1:getAllPhoneNumbers
+-
+- 
+-
+#### API 2:getAllPhoneNumbersById
+-
+-
+#### API 3:activatePhoneNumber
+-
+-
+#### API 4:changePhoneNumberById
+-
+-
